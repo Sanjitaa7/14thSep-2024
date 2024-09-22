@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <style>
+        /* Parallax Effect */
+        .parallax {
+            /* background-image: url('images/parralax-bg2.jpg'); */
+            height: 390px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Common Page Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        /* Photo Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: auto;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .surprise-btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .surprise-btn:hover {
+            background-color: #ff658e;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Parallax Section -->
+    <div class="parallax"></div>
+
+    <!-- Photo Gallery -->
+    <div class="container">
+        <div class="gallery">
+            <img src="Images/9.jpg" alt="Her photo 2">
+            <img src="Images/12.jpg" alt="Her photo 3">
+            <img src="Images/10.jpg" alt="Her photo 1">
+            <img src="Images/11.jpg" alt="Her photo 4">
+            
+        </div>
+        <a href="Surprize.html">
+            <button class="surprise-btn">Now its seriously a surprise</button>
+        </a>
+    </div>
+
+</body>
+</html>

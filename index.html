@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 3, Love!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f5f5f5; /* Light text color */
+        }
+
+        h1, h2, p {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 50px;
+            color: #ffcc00; /* Gold color for heading */
+            margin-top: 40px;
+            animation: swipeUp 1s ease-in-out; /* Apply animation */
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #ffcc00; /* Gold color for subheading */
+            animation: swipeUp 1s ease-in-out; /* Apply animation */
+        }
+
+        /* Section with Parallax Background */
+        .parallax {
+            background-image: url('images/parralax-bg.jpg');
+            height: 500px;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+        }
+
+        /* Heart Shape */
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            margin: 30px auto;
+            cursor: pointer; /* Change cursor to pointer */
+            transition: transform 0.3s; /* Smooth transition for scale effect */
+            animation: swipeUp 1s ease-in-out; /* Apply animation */
+        }
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red; /* Same color as the heart */
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+        .heart::after {
+            top: 0;
+            left: 50px;
+        }
+
+        /* Heart Text */
+        .heart-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the text */
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            z-index: 1; /* Ensure text is on top */
+        }
+
+        /* Hover Effect */
+        .heart:hover {
+            transform: rotate(-45deg) scale(1.1); /* Scale effect on hover */
+            background-color: #ffcc00; /* Change color on hover */
+        }
+
+        /* Photo Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: 2px solid #ffcc00; /* Gold border for images */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Quotes */
+        .quote {
+            font-family: 'Cursive', sans-serif;
+            font-size: 24px;
+            color: #ffcc00; /* Gold color for quotes */
+            text-align: center;
+            margin: 20px;
+            text-shadow: 2px 2px #000; /* Dark shadow for contrast */
+            transition: all 0.5s ease-in-out;
+            animation: swipeUp 1s ease-in-out; /* Apply animation */
+        }
+
+        .quote:hover {
+            color: #ffcc00;
+            transform: scale(1.05);
+        }
+
+        /* Decorative Section Divider */
+        .wave {
+            height: 100px;
+            background: linear-gradient(180deg, #ffcc00 50%, #1a1a1a 50%);
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+        }
+
+        /* Button */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            background: linear-gradient(to right, #ffcc00, #ff9900); /* Gold gradient */
+            color: black; /* Dark text for button */
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+        }
+
+        .button:hover {
+            background: linear-gradient(to right, #ff9900, #ffcc00);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffcc00; /* Gold footer */
+            padding: 20px;
+            text-align: center;
+            color: black; /* Dark text for footer */
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Keyframes for Swipe Up Animation */
+        @keyframes swipeUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Header with Parallax Background -->
+    <section class="parallax">
+        <h1>Happy 3,Dadu!</h1>
+    </section>
+
+    <!-- Memory Section with Heart Shapes -->
+    <div class="heart">
+        <div class="heart-text"></div>
+    </div>
+    <h2>Celebrating Your Radiance</h2>
+    <div class="quote">"To the man who handles all my mood swings, my ego, my anger,my faltu ka bokbok, my stupidity and many moreeeee
+        Thankyou for loving me this much>>>>💝."</div>
+
+    <!-- Decorative Section Divider -->
+    <div class="wave"></div>
+
+    <!-- Photo Gallery Section -->
+    <h2>Capturing Us</h2>
+    <div class="gallery">
+        <img src="Images/1.jpg" alt="Memory 1">
+        <img src="Images/2.jpg" alt="Memory 2">
+        <img src="Images/3.jpg" alt="Memory 3">
+        <img src="Images/4.jpg" alt="Memory 4">
+        <img src="Images/5.jpg" alt="Memory 5">
+        <img src="Images/6.jpg" alt="Memory 6">
+        <img src="Images/7.jpg" alt="Memory 7">
+    </div>
+
+    <!-- Surprise Button -->
+    <a href="anni.html" class="button">Press for a Surprise</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by ke r banabe buri chara?</p>
+    </footer>
+
+</body>
+</html>
